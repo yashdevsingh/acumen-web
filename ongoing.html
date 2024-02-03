@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Quizzes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #39748f;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .logo {
+            width: 240px;
+            height: auto;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .event-image {
+            position: relative;
+            margin: 10px;
+            border: 1px solid #39748f;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            height: 400px;
+            transition: transform 0.3s;
+        }
+
+        .event-image:hover {
+            transform: scale(1.1); 
+        }
+
+        .event-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .event-image:hover .image-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="index.html">
+            <img src="./Quiz Club Logo.png" alt="Quiz Club Logo" class="logo">
+        </a>
+
+        <h1>Upcoming Quizzes</h1>
+
+        <div class="image-container">
+            <!-- Replace the URLs with your own image URLs -->
+            <div class="event-image">
+                <img src="./QGP1.png" alt="54">
+                <div class="image-text">5-8rd February, 2024</div>
+            </div>
+            <div class="event-image">
+                <img src="./QGP2.png" alt="53">
+                <div class="image-text">Chalchitra Quiz, February, 2024</div>
+            </div>
+            <div class="event-image">
+                <img src="./QGP3.png" alt="52">
+                <div class="image-text">To be announced</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
