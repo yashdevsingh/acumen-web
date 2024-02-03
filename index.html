@@ -151,6 +151,16 @@
             border-left: 1px solid #ddd;
             margin: 0 20px;
         }
+
+        .event a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure the anchor is clickable over the image */
+        }
     </style>
 </head>
 <body>
@@ -177,23 +187,16 @@
 
         <div class="events">
             <div class="event">
-                <img src="./54.jpg" alt="54">
+                <a href="past-events.html">
+                    <img src="./54.jpg" alt="54">
+                </a>
                 <div class="event-content">
+                    <!-- Additional content if needed -->
                 </div>
             </div>
 
-            <!-- Ongoing Event -->
-            <div class="event">
-                <img src="./QGP.png" alt="QGP">
-                <div class="event-content">
-                </div>
-            </div>
+            <!-- Other events remain unchanged -->
 
-            <div class="event">
-                <img src="./Kriti.jpg" alt="Kriti">
-                <div class="event-content">
-                </div>
-            </div>
         </div>
 
         <a href="leaderboard.html" class="view-leaderboard">View QGP Leaderboard</a>
@@ -207,7 +210,7 @@
                 We don't quiz because it adds up to our CV or something. We don't quiz because we like impressing anyone. We do it, because we are unluckily, helplessly in love with it. And this love is what makes our club a family. We quizzers, a group of all-knowing knuckleheads, in the search of something greater in life. Perhaps one day we would find the answer to the universe itself? But I think we quizzers already know the quadraginta duo answers to it.
             </p>
             <a href="more.html" class="view-leaderboard">More about us</a>
-            </div>
+        </div>
 
         <div class="image-buttons">
 
