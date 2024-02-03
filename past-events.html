@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Events</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #39748f; /* Light blue background */
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f5f5f5; /* Light grey background */
+            padding: 20px; /* Added padding for content spacing */
+            border-radius: 10px; /* Added border-radius for rounded corners */
+        }
+
+        .logo {
+            width: 240px; /* Adjust the width as needed */
+            height: auto; /* To maintain aspect ratio */
+            margin-top: 20px;
+            cursor: pointer;
+            transition: transform 0.3s; /* Add transition for zoom effect */
+        }
+
+        .logo:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333; /* Adjust text color */
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .event-image {
+            position: relative;
+            margin: 10px;
+            border: 1px solid #39748f; /* Outline color */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s; /* Add transition for zoom effect */
+        }
+
+        .event-image:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+
+        .event-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .event-image:hover img {
+            filter: blur(5px) grayscale(100%);
+        }
+
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .event-image:hover .image-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="homepage.html">
+            <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\Quiz Club Logo.png" alt="Quiz Club Logo" class="logo">
+        </a>
+
+        <h1>Quizzes Conducted</h1>
+
+        <div class="image-container">
+            <!-- Replace the URLs with your own image URLs -->
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\54.jpg" alt="54">
+                <div class="image-text">3rd February, 2024</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\53.jpg" alt="53">
+                <div class="image-text">26th January, 2024</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\52.jpg" alt="52">
+                <div class="image-text">21st January, 2024</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\51.jpg" alt="54">
+                <div class="image-text">10th January, 2024</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\50.jpg" alt="54">
+                <div class="image-text">18th October, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\49.jpg" alt="54">
+                <div class="image-text">17th October, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\48.jpg" alt="54">
+                <div class="image-text">14th October, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\47.jpg" alt="54">
+                <div class="image-text">8th October, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\46.jpg" alt="54">
+                <div class="image-text">7th October, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\45.jpg" alt="54">
+                <div class="image-text">2nd October, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\44.jpg" alt="54">
+                <div class="image-text">27th August, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\43.jpg" alt="54">
+                <div class="image-text">15th August, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\42.jpg" alt="54">
+                <div class="image-text">13th August, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\41.jpg" alt="54">
+                <div class="image-text">9th July, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\40.jpg" alt="54">
+                <div class="image-text">29th April, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\39.jpg" alt="54">
+                <div class="image-text">27th April, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\38.jpg" alt="54">
+                <div class="image-text">25th April, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\37.jpg" alt="54">
+                <div class="image-text">22nd April, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\36.jpg" alt="54">
+                <div class="image-text">16th April, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\35.jpg" alt="54">
+                <div class="image-text">15th April, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\34.jpg" alt="54">
+                <div class="image-text">12th February, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\33.jpg" alt="54">
+                <div class="image-text">1st February, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\32.jpg" alt="54">
+                <div class="image-text">27th January, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\31.jpg" alt="54">
+                <div class="image-text">26th January, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\30.jpg" alt="54">
+                <div class="image-text">24th January, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\29.jpg" alt="54">
+                <div class="image-text">18th January, 2023</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\28.jpg" alt="54">
+                <div class="image-text">14th November, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\27.jpg" alt="54">
+                <div class="image-text">11th November, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\26.jpg" alt="54">
+                <div class="image-text">10th November, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\25.jpg" alt="54">
+                <div class="image-text">7th November, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\24.jpg" alt="54">
+                <div class="image-text">30th October, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\23.jpg" alt="54">
+                <div class="image-text">22th October, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\22.jpg" alt="54">
+                <div class="image-text">15th August, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\21.jpg" alt="54">
+                <div class="image-text">3rd July, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\20.jpg" alt="54">
+                <div class="image-text">5th June, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\19.jpg" alt="54">
+                <div class="image-text">12th Feb, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\18.jpg" alt="54">
+                <div class="image-text">26th January, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\17.jpg" alt="54">
+                <div class="image-text">20th January, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\16.jpg" alt="54">
+                <div class="image-text">2nd January, 2022</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\15.jpg" alt="54">
+                <div class="image-text">21st August, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\14.jpg" alt="54">
+                <div class="image-text">1st August, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\13.jpg" alt="54">
+                <div class="image-text">24th July, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\12.jpg" alt="54">
+                <div class="image-text">17th July, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\11.jpg" alt="54">
+                <div class="image-text">10th July, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\10.jpg" alt="54">
+                <div class="image-text">4th July, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\9.jpg" alt="54">
+                <div class="image-text">3rd July, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\8.jpg" alt="54">
+                <div class="image-text">27th June, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\7.jpg" alt="54">
+                <div class="image-text">26th June, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\6.jpg" alt="54">
+                <div class="image-text">19th June, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\5.jpg" alt="54">
+                <div class="image-text">13th June, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\4.jpg" alt="54">
+                <div class="image-text">12th June, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\3.jpg" alt="54">
+                <div class="image-text">6th June, 2021</div>
+            </div>
+            <div class="event-image">
+                <img src="C:\Users\kingr\Desktop\Quiz Club\Acumen Website\1.jpg" alt="54">
+                <div class="image-text">16th May, 2021</div>
+            <!-- Add more event images as needed -->
+        </div>
+
+    </div>
+
+</body>
+</html>

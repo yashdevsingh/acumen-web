@@ -1,0 +1,9 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    color: #333;
+    text-align: center;
+}
