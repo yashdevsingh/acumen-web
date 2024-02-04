@@ -52,7 +52,6 @@
             overflow: hidden;
             width: 240px;
             height: 240px;
-            cursor: pointer;
             transition: transform 0.3s;
         }
 
@@ -65,10 +64,6 @@
             height: 100%;
             object-fit: cover;
             transition: filter 0.3s ease-in-out;
-        }
-
-        .event-image:hover img {
-            filter: blur(5px) grayscale(100%);
         }
 
         .image-text {
@@ -86,121 +81,26 @@
         .event-image:hover .image-text {
             opacity: 1;
         }
-
-        /* Modal Styling */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            max-width: 80%;
-            max-height: 80%;
-            overflow: hidden;
-        }
-
-        .modal-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #fff;
-            font-size: 20px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
 
     <div class="container">
 
-        <a href="#" id="weeklyLink">
+        <a href="index.html">
             <img src="./Quiz Club Logo.png" alt="Quiz Club Logo" class="logo">
         </a>
 
-        <h1>WEEKLY SETS</h1>
+        <h1>QUIZZES CONDUCTED</h1>
 
         <div class="image-container">
-            <div class="event-image" onclick="openModal('./1 Feb.png')">
-                <img src="./1 Feb.png" alt="54">
-                <div class="image-text">1st February, 2024</div>
+            <div class="event-image">
+                <img src="./1 Feb.jpg" alt="54">
             </div>
-            <!-- Add more event images as needed -->
+            <!-- Add more weekly set images as needed -->
         </div>
 
     </div>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-        <span class="close-modal" onclick="closeModal">&times;</span>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./1 Feb.1.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./1 Feb.2.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./1 Feb.3.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./1 Feb.4.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./1 Feb.5.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./A1 Feb.1.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./A1 Feb.1.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./A1 Feb.1.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./A1 Feb.1.png">
-        </div>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="./A1 Feb.1.png">
-        </div>
-    </div>
-
-    <script>
-        document.getElementById('weeklyLink').addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent opening in another tab
-            openModal('./54.jpg');
-        });
-
-        function openModal(imagePath) {
-            document.getElementById("modalImage").src = imagePath;
-            document.getElementById("myModal").style.display = "flex";
-
-            // Close the modal when anything else is clicked
-            document.body.addEventListener('click', closeModalOnClick);
-        }
-
-        function closeModalOnClick() {
-            document.getElementById("myModal").style.display = "none";
-            document.body.removeEventListener('click', closeModalOnClick);
-        }
-
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-            document.body.removeEventListener('click', closeModalOnClick);
-        }
-    </script>
 
 </body>
 </html>
