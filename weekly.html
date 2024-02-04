@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Past Events</title>
+    <title>Weekly Sets</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -126,7 +126,7 @@
 
     <div class="container">
 
-        <a href="index.html">
+        <a href="#" id="weeklyLink">
             <img src="./Quiz Club Logo.png" alt="Quiz Club Logo" class="logo">
         </a>
 
@@ -151,13 +151,27 @@
     </div>
 
     <script>
+        document.getElementById('weeklyLink').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent opening in another tab
+            openModal('./54.jpg');
+        });
+
         function openModal(imagePath) {
             document.getElementById("modalImage").src = imagePath;
             document.getElementById("myModal").style.display = "flex";
+
+            // Close the modal when anything else is clicked
+            document.body.addEventListener('click', closeModalOnClick);
+        }
+
+        function closeModalOnClick() {
+            document.getElementById("myModal").style.display = "none";
+            document.body.removeEventListener('click', closeModalOnClick);
         }
 
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
+            document.body.removeEventListener('click', closeModalOnClick);
         }
     </script>
 
