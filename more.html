@@ -50,7 +50,7 @@
         .team-member {
             flex-basis: calc(33.33% - 20px);
             margin-bottom: 20px;
-            text-align: left;
+            text-align: center;
             box-sizing: border-box;
             padding: 20px;
             border-radius: 10px;
@@ -58,11 +58,19 @@
             background-color: #fff;
         }
 
-        .team-member img {
-            width: 100%;
+        .team-member-large-img {
+            width: 200px;
             height: auto;
             border-radius: 50%;
             margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .team-member-small-img {
+            width: 50px;
+            height: auto;
+            margin: 5px;
+            cursor: pointer;
         }
 
         .team-member h3 {
@@ -93,69 +101,18 @@
         <div class="team-members">
 
             <div class="team-member">
-                <img src="./Prakhar Bhaiya.jpg" alt="Team Member 1">
+                <img class="team-member-large-img" src="./Prakhar Bhaiya.jpg" alt="Prakhar Bhattacharya">
                 <h3>Prakhar Bhattacharya</h3>
                 <p>Secretary</p>
-                <p>Phone: +91 63990 68220</p>
-                <p>Email: b.prakhar@iitg.ac.in</p>
+                <a href="link_to_small_image_1.html">
+                    <img class="team-member-small-img" src="./small_image_1.jpg" alt="Small Image 1">
+                </a>
+                <a href="link_to_small_image_2.html">
+                    <img class="team-member-small-img" src="./small_image_2.jpg" alt="Small Image 2">
+                </a>
             </div>
 
-            <div class="team-member">
-                <img src="./YDS.jpg" alt="Team Member 2">
-                <h3>Yash Dev Singh</h3>
-                <p>Core Team Member</p>
-                <p>Phone: +91 78805 97986</p>
-                <p>Email: yd.singh@iitg.ac.in</p>
-            </div>
-
-            <div class="team-member">
-                <img src="./Soni.jpg" alt="Team Member 2">
-                <h3>Shreyansh Soni</h3>
-                <p>Core Team Member</p>
-                <p>Phone: +91 82994 266991</p>
-                <p>Email: shreyansh.soni@iitg.ac.in</p>
-            </div>
-
-            <div class="team-member">
-                <img src="./Tushif.jpg" alt="Team Member 2">
-                <h3>Tushif T. Rahman</h3>
-                <p>Core Team Member</p>
-                <p>Phone: +91 60029 91557</p>
-                <p>Email: r.tushif@iitg.ac.in</p>
-            </div>
-
-            <div class="team-member">
-                <img src="./Bund.jpg" alt="Team Member 2">
-                <h3>Prakhar Punj</h3>
-                <p>Core Team Member</p>
-                <p>Phone: +91 91226 16556</p>
-                <p>Email: p.punj@iitg.ac.in</p>
-            </div>
-
-            <div class="team-member">
-                <img src="./Bhagwati.jpg" alt="Team Member 2">
-                <h3>Prashurjya Bhagwati</h3>
-                <p>Core Team Member</p>
-                <p>Phone: +91 76379 52281</p>
-                <p>Email: b.prashurjya@iitg.ac.in</p>
-            </div>
-
-            <div class="team-member">
-                <img src="./Garg.jpg" alt="Team Member 2">
-                <h3>Shreyans Garg</h3>
-                <p>Core Team Member</p>
-                <p>Phone: +91 85952 05947</p>
-                <p>Email: g.shreyans@iitg.ac.in</p>
-            </div>
-
-            <div class="team-member">
-                <img src="./Udit.jpg" alt="Team Member 2">
-                <h3>Udit Jethva</h3>
-                <p>Core Team Member</p>
-                <p>Phone: +91 70461 53989</p>
-                <p>Email: j.udit@iitg.ac.in</p>
-            </div>
-
+            <!-- Repeat the same structure for other team members -->
         </div>
 
     </div>
