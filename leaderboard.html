@@ -12,7 +12,19 @@
         }
 
         .logo-container {
-            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(216, 212, 212);
+            z-index: 100;
         }
 
         .logo {
@@ -71,11 +83,12 @@
 </head>
 <body>
 
-    <div class="logo-container">
+        <div class="logo-container">
         <a href="index.html">
             <img src="./Quiz Club Logo.png" alt="Quiz Club Logo" class="logo">
         </a>
     </div>
+    
 
     <div class="header">
         <h1>Quizzing Grand Prix(QGP) Leaderboard</h1>
