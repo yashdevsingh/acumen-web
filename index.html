@@ -13,7 +13,6 @@
             color: #333;
             text-align: center;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -21,22 +20,18 @@
             padding: 20px;
             border-radius: 10px;
         }
-
         .logo-container {
             margin-bottom: 20px;
         }
-
         .logo {
             width: 300px;
             height: auto; 
         }
-
         .event-categories {
             display: flex;
             justify-content: space-around;
             margin-bottom: 20px;
         }
-
         .category-text {
             flex-basis: 20%; 
             color: #5ba3a7; 
@@ -44,11 +39,9 @@
             padding: 10px;
             transition: color 0.3s; 
         }
-
         .category-text:hover {
             color: #39748f; 
         }
-
         .events {
             display: flex;
             justify-content: space-between;
@@ -59,40 +52,34 @@
         }
 
         .event {
-            position: relative;
-            margin: 10px;
-            border: 1px solid #39748f;
+            flex-basis: 30%; 
+            border: 1px solid #ddd;
             border-radius: 10px;
             overflow: hidden;
-            width: 300px;
-            height: 400px;
             transition: transform 0.3s;
+            aspect-ratio: 3/4;
+            margin-bottom: 20px;
+            position: relative;
         }
-
         .event:hover {
             transform: scale(1.1); 
         }
-
         .event img {
             width: 100%;
             height: auto;
             display: block;
         }
-
         .event-content {
             padding: 10px;
         }
-
         .event h2 {
             margin-bottom: 10px;
             color: #333;
         }
-
         .event p {
             color: #666;
             margin-bottom: 5px;
         }
-
         .button {
             text-decoration: none;
             color: #fff;
@@ -104,11 +91,9 @@
             display: inline-block; 
             transition: background-color 0.3s;
         }
-
         .button:hover {
             background-color: #39748f; 
         }
-
         .about-acumen {
             margin-top: 30px;
             text-align: left;
@@ -117,34 +102,28 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
-
         .about-acumen h2 {
             color: #000000;
         }
-
         .about-acumen p {
             color: #333;
             line-height: 1.6;
             margin-bottom: 10px;
         }
-
         .image-buttons {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin-top: 20px;
         }
-
         .image-button {
             cursor: pointer;
         }
-
         .image-button img {
             width: 60px;
             height: auto;
             border-radius: 10px;
         }
-
         .image-button:hover {
             transform: scale(1.1);
         }
@@ -154,7 +133,6 @@
             border-left: 1px solid #000000;
             margin: 0 20px;
         }
-
         .event a {
             display: block;
             height: 100%;
@@ -164,16 +142,13 @@
             left: 0;
             z-index: 1; /* Ensure the anchor is clickable over the image */
         }
-
         .resources-section {
             margin-top: 30px;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-
         <div class="logo-container">
             <a href="index.html">
                 <img src="./Resources/Quiz Club Logo.png" alt="Quiz Club Logo" class="logo">
@@ -182,10 +157,13 @@
 
         <div class="event-categories">
             <div class="category-text">
-                <h2>Past Quizzes</h2>
+                <h2>PAST</h2>
             </div>
             <div class="category-text">
-                <h2>QGP</h2>
+                <h2>ONGOING</h2>
+            </div>
+            <div class="category-text">
+                <h2>UPCOMING</h2>
             </div>
         </div>
 
@@ -205,13 +183,19 @@
                 <div class="event-content">
                 </div>
             </div>
+
+            <div class="event">
+                <a href="upcoming.html">
+                    <img src="./Resources/next 1.png" alt="Upcoming">
+                </a>
+                <div class="event-content">
+                </div>
+            </div>
             <!-- Other events remain unchanged -->
 
         </div>
-
         <a href="leaderboard.html" class="button">View QGP Leaderboard</a>
         <!--<a href="winner.html" class="button">Winners of QGP</a> -->
-
         <div class="about-acumen">
             <h2>About us</h2>
             <p>
@@ -225,7 +209,6 @@
             </p>
             <a href="more.html" class="button">Meet the team</a>
         </div>
-
         <div class="image-buttons">
             
             <div class="image-button">
@@ -233,46 +216,34 @@
                     <img src="./Resources/Instagram Logo.png" alt="Instagram Logo">
                 </a>
             </div>
-
             <div class="separator-line"></div>
-
             <div class="image-button">
                 <a href="https://wa.me/916399068220" target="_blank">
                     <img src="./Resources/WhatsApp Logo.png" alt="WhatsApp Logo">
                 </a>
             </div>
-
             <div class="separator-line"></div>
-
              <div class="image-button">
                 <a href="mailto:quizclub@iitg.ac.in" target="_blank">
                     <img src="./Resources/Outlook Logo.png" alt="Outlook Logo">
                 </a>
             </div>
-
             <div class="separator-line"></div>
-
             <div class="image-button">
                 <a href="https://www.youtube.com/@quizclubiitguwahati3192" target="_blank">
                     <img src="./Resources/YouTube Logo.png" alt="Youtube Logo">
                 </a>
             </div>
-
             <div class="separator-line"></div>
-
             <div class="image-button">
                 <a href="https://drive.google.com/drive/u/3/folders/1wH4DAt1IljQksPl9aeyAm-l2r670D1Yt" target="_blank">
                     <img src="./Resources/Drive Logo.png" alt="Drive Logo">
                 </a>
             </div>
-
      </div>
-
         <div class="resources-section">
               <a href="weekly.html" class="button" target="_blank">WEEKLY SETS</a>
         </div>
-
     </div>
-
 </body>
 </html>
